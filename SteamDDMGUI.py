@@ -11,11 +11,6 @@ from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                             QHBoxLayout, QPushButton, QLabel, QProgressBar, QFileDialog, QCheckBox)
 from PyQt6.QtCore import Qt, pyqtSignal, QObject, QThread
 
-if platform.system() == "Windows":
-    from subprocess import CREATE_NO_WINDOW
-else:
-    CREATE_NO_WINDOW = 0
-
 class DownloadWorker(QObject):
 
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
