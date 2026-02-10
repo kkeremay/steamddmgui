@@ -99,9 +99,13 @@ The compiled executable will be located in the `dist/` directory.
 
 This project requires `DepotDownloaderMod`. While compiled executables are included with the source code, you can compile it yourself from source. Please refer to the [DepotDownloaderMod GitHub Repository](https://github.com/SteamAutoCracks/DepotDownloaderMod) for build instructions.
 
-## Disclaimer
+## Legal Disclaimer
 
-This software is provided for educational and archival purposes only. The authors do not condone piracy or copyright infringement. Users are responsible for ensuring they comply with all applicable laws and terms of service when using this software.
+**Non-Affiliation:** This project is an independent, third-party utility. It is not affiliated with, authorized, maintained, sponsored, or endorsed by Valve Corporation, Steam, or any of its affiliates or subsidiaries. 
+
+**Trademarks:** "Steam" and the Steam logo are trademarks or registered trademarks of Valve Corporation in the U.S. and/or other countries. All other trademarks are the property of their respective owners.
+
+**Usage:** This software is intended for personal archival and educational purposes only. The developers assume no liability for misuse, account actions, or data loss resulting from the use of this tool.
 
 ## Acknowledgments & Third-Party Components
 
