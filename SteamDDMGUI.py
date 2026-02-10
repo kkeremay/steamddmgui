@@ -11,6 +11,11 @@ from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                             QHBoxLayout, QPushButton, QLabel, QProgressBar, QFileDialog, QCheckBox)
 from PyQt6.QtCore import Qt, pyqtSignal, QObject, QThread
 
+if platform.system() == "Windows":
+    from subprocess import CREATE_NO_WINDOW
+else:
+    CREATE_NO_WINDOW = 0
+
 class DownloadWorker(QObject):
 
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -109,7 +114,7 @@ class DownloadWorker(QObject):
                     else:
                         subprocess.run([
                             steamless, "--quiet --realign", file_path
-                        ])
+                        ], creationflags=CREATE_NO_WINDOW)
                     if os.path.exists(os.path.join(root, filename + ".unpacked.exe")):
                         shutil.move(file_path, file_path + ".bak")
                         shutil.move(file_path + ".unpacked.exe", file_path)
