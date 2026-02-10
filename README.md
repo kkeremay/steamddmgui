@@ -1,5 +1,8 @@
 # Steam DDM GUI
 
+> ### Safety Notice
+> This software is provided free of charge under the **GPL-3.0 License**. If you paid for this software or downloaded it from a source other than the official GitHub repository, you may be the victim of a scam. Please report any unauthorized paid distributions.
+
 ## Overview
 
 Steam DDM GUI is software designed for digital content preservation. It provides a graphical interface to interact with Steam content delivery systems using standard `.lua` and `.manifest` files. This tool facilitates the backup and preservation of owned digital content by leveraging open-source components for compatibility and offline usage.
